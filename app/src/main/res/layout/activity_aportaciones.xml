@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AportacionesActivity">
+    <LinearLayout
+        android:id="@+id/linearbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="90dp">
+        <ImageButton
+            android:id="@+id/btn_regreso_aport"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/boton_regreso" />
+        <ImageView
+            android:id="@+id/btn_aportaciones"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/boton_aportaciones_rectangulo" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview_aport"
+        android:layout_width="match_parent"
+        android:layout_height="451dp"
+        android:layout_below="@id/linearbar2"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="90dp"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:verticalSpacing="1dp">
+
+    </GridView>
+</RelativeLayout>

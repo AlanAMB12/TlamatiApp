@@ -1,0 +1,4 @@
+#Tue Jun 02 13:00:03 CDT 2020
+base.0=C\:\\Users\\Xactail-PC\\Downloads\\TlamatiF-master\\TlamatiF-master\\Tlamati\\Launcher\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="marcador_emperador" size="380.000000 554.000000" />
+    <ImageTarget name="marcador_templo_de_Tezcatlipoca" size="531.000000 407.000000" />
+    <ImageTarget name="marcardor_mascota" size="271.000000 547.000000" />
+    <ImageTarget name="marcardor_logo" size="366.000000 379.000000" />
+    <ImageTarget name="marcardor_slogan" size="428.000000 281.000000" />
+  </Tracking>
+</QCARConfig>

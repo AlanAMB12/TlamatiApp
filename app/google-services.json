@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "456102236842",
+    "firebase_url": "https://tlamatiapp-e2563.firebaseio.com",
+    "project_id": "tlamatiapp-e2563",
+    "storage_bucket": "tlamatiapp-e2563.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456102236842:android:da7f4fc3b725ca989376d3",
+        "android_client_info": {
+          "package_name": "mx.ipn.tlamati"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456102236842-6rnic709h7ikms50qrjphcjvvd4vli0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.ipn.tlamati",
+            "certificate_hash": "39e50d101666615a5a03928b468e23e7d9421104"
+          }
+        },
+        {
+          "client_id": "456102236842-2ses0ktu2p14kjchm56r6ho27lrudtg2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3o60TmrjnaoZtgX_EE-B2fijZCl_GVrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456102236842-2ses0ktu2p14kjchm56r6ho27lrudtg2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

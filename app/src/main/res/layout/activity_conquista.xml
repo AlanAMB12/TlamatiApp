@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConquistaActivity">
+    <LinearLayout
+        android:id="@+id/linearbar_conqu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="90dp">
+        <ImageButton
+            android:id="@+id/btn_regreso_conqu"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/boton_regreso" />
+        <ImageView
+            android:id="@+id/btn_conqu"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/boton_conquista_de_tenochtitlan_rectangulo" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_con"
+        android:layout_width="139dp"
+        android:layout_height="131dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@mipmap/imagen_c" />
+
+    <ImageView
+        android:id="@+id/imageView_con_2"
+        android:layout_width="376dp"
+        android:layout_height="293dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="95dp"
+        android:background="@mipmap/boton_area_de_texto"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/textView_conquista"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="345dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+</RelativeLayout>

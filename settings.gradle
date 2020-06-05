@@ -1,0 +1,3 @@
+rootProject.name='Tlamati'
+include ':app'
+include ':unityLibrary'

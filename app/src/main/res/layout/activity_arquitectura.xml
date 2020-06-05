@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ArquitecturaActivity"
+    android:background="@drawable/fondoarquitectura">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/ivins"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/instruccionesarq" />
+
+    <ImageView
+        android:id="@+id/ivarq"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/botonarquitectura" />
+
+
+
+    <ImageView
+        android:id="@+id/imvbi"
+        android:layout_width="50dp"
+        android:layout_height="88dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/botonsiguienteizq" />
+
+    <ImageView
+        android:id="@+id/imvbd"
+        android:layout_width="50dp"
+        android:layout_height="88dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/botonsiguiente" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/areadeescaneo" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.viewpager.widget.ViewPager>
+    <ImageView
+    android:id="@+id/imgvreg"
+    android:layout_width="70dp"
+    android:layout_height="60dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    app:srcCompat="@drawable/botonregreso" />
+
+</RelativeLayout>

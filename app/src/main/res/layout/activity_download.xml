@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    tools:context=".DownloadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="90dp">
+        <ImageButton
+            android:id="@+id/btn_regreso"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/boton_regreso" />
+        <ImageView
+            android:id="@+id/btn_descargas"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/icono_descarga" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/btn_sopa"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitStart"
+            app:srcCompat="@mipmap/boto_sopa_de_letras"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_completa"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitStart"
+            app:srcCompat="@mipmap/boton_completa_la_palabra" />
+
+        <ImageButton
+            android:id="@+id/btn_tripas"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitStart"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@mipmap/boton_tripas_de_gato" />
+
+        <ImageButton
+            android:id="@+id/btn_crucigrama"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitStart"
+            app:srcCompat="@mipmap/boton_crucigrama" />
+
+        <ImageButton
+            android:id="@+id/btn_piramide"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:background="@mipmap/fondo_png"
+            android:scaleType="fitStart"
+            app:srcCompat="@mipmap/boton_piramide" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
