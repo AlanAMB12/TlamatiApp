@@ -4,6 +4,7 @@ package com.unity3d.player;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.ColorSpace;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -12,11 +13,23 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.os.Process;
+import android.widget.Button;
+import android.widget.FrameLayout;
+
+import androidx.viewpager.widget.ViewPager;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static android.os.Build.VERSION_CODES.M;
 
 public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecycleEvents
 {
     protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
 
+    FrameLayout fl_forUnity;
+    ViewPager viewPager4;
+    Button bt_rotRight;
     // Override this in your custom UnityPlayerActivity to tweak the command line arguments passed to the Unity Android Player
     // The command line arguments are passed as a string, separated by spaces
     // UnityPlayerActivity calls this from 'onCreate'
@@ -35,11 +48,41 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
 
+
+
         String cmdLine = updateUnityCommandLineArguments(getIntent().getStringExtra("unity"));
         getIntent().putExtra("unity", cmdLine);
 
         mUnityPlayer = new UnityPlayer(this, this);
-        setContentView(mUnityPlayer);
+        if (mUnityPlayer.getSettings().getBoolean("hide_status_bar",true))
+        {
+            setTheme(android.R.style.Theme_NoTitleBar_Fullscreen);
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        }
+
+
+
+        setContentView(R.layout.main);
+
+        this.fl_forUnity = (FrameLayout) findViewById(R.id.fl_forUnity);
+        this.fl_forUnity.addView(mUnityPlayer.getView(),
+                FrameLayout.LayoutParams.MATCH_PARENT,FrameLayout.LayoutParams.MATCH_PARENT);
+
+        this.bt_rotRight = (Button) findViewById(R.id.bt_rotRight);
+        this.bt_rotRight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               //aqui va pa regresar al learnactivity
+                mUnityPlayer.destroy();
+               finish();
+            }
+        });
+
+        viewPager4 = (ViewPager) findViewById(R.id.viewPager4);
+
+
+
         mUnityPlayer.requestFocus();
     }
 

@@ -27,9 +27,9 @@ public class CreaYJuegaActivity extends AppCompatActivity {
     List<Model> models3;
     Integer[] colors = null;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
-    ImageView im1,im2,imageView5,imageView6,imageView7,imageView2,imageView3,imageView4;
-    int monito1,monito2,monito3,monito4,monito5,traje1,traje2,traje3,traje4,traje5,traje6,gorra1,gorra2,gorra3,gorra4,gorra5,gorra6;
-    int monito,traje,gorra;
+    ImageView im1,im2,imageView5,imageView6,imageView7,imageView2,imageView3,imageView4, imageView8, imageView9;
+    int monito1,monito2,monito3,monito4,monito5,traje1,traje2,traje3,traje4,traje5,traje6,gorra1,gorra2,gorra3,gorra4,gorra5,gorra6, bigote;
+    int monito,traje,gorra, con_bigote, sin_bigote;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,7 @@ public class CreaYJuegaActivity extends AppCompatActivity {
         monito = 1;
         traje = 1;
         gorra = 1;
+        con_bigote =1;
         monito1 = R.drawable.monito1;
         monito2 = R.drawable.monito2;
         monito3 = R.drawable.monito3;
@@ -54,6 +55,8 @@ public class CreaYJuegaActivity extends AppCompatActivity {
         gorra4 = R.drawable.gorra4;
         gorra5 = R.drawable.gorra5;
         gorra6 = R.drawable.gorra6;
+        bigote = R.drawable.bigote;
+        sin_bigote = R.drawable.fondo;
         im1 = (ImageView) findViewById(R.id.im1) ;
         im2 = (ImageView) findViewById(R.id.im2) ;
         imageView2 = (ImageView) findViewById(R.id.imageView2) ;
@@ -62,6 +65,8 @@ public class CreaYJuegaActivity extends AppCompatActivity {
         imageView5 = (ImageView) findViewById(R.id.imageView5) ;
         imageView6 = (ImageView) findViewById(R.id.imageView6) ;
         imageView7 = (ImageView) findViewById(R.id.imageView7) ;
+        imageView8 = (ImageView) findViewById(R.id.imageView8) ;
+        imageView9 = (ImageView) findViewById(R.id.imageView9) ;
 
         im1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -149,7 +154,18 @@ public class CreaYJuegaActivity extends AppCompatActivity {
                 }
             }
         });
-
+        imageView8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(con_bigote==0){
+                    imageView9.setImageResource(sin_bigote);
+                    con_bigote=1;
+                }else if(con_bigote==1){
+                    imageView9.setImageResource(bigote);
+                    con_bigote=0;
+                }
+            }
+        });
 
 
 

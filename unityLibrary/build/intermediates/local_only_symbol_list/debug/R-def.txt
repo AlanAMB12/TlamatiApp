@@ -1,5 +1,32 @@
 R_DEF: Internal format may change without notice
 local
+drawable areadeescaneo
+drawable botonarquitectura
+drawable botonregreso
+drawable fondo
+drawable fondoarquitectura
+drawable instruccionesarq
+drawable templo_mayor
+drawable templodequetzalcoatl
+drawable templodetezcatlipoca
+id bt_rotRight
+id fl_forUnity
+id image4
+id imageView8
+id imgclose_templom
+id imgclose_temploq
+id imgclose_templot
+id ivarq
+id ivins
+id textView_templom
+id textView_temploq
+id textView_templot
+id viewPager4
+layout item4
+layout main
+layout templom_popup
+layout temploq_popup
+layout templot_popup
 style BaseUnityTheme
 style UnityThemeSelector
 style UnityThemeSelector.Translucent
